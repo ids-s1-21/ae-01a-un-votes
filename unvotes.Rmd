@@ -34,7 +34,7 @@ unvotes <- read_rds("data/unvotes.rds")
 
 ## UN voting patterns {#voting}
 
-Let's  create a data visualization that displays how the voting record of the UK & NI changed over time on a variety of issues, and compares it to two other countries: US and Turkey.
+Let's create a data visualization that displays how the voting record of the UK changed over time on a variety of issues, and compares it to two other countries: US and Turkey.
 
 We can easily change which countries are being plotted by changing which countries the code above `filter`s for. Note that the country name should be spelled and capitalized exactly the same way as it appears in the data. See the [Appendix](#appendix) for a list of the countries in the data.
 
@@ -51,7 +51,7 @@ unvotes %>%
   scale_y_continuous(labels = percent) +
   labs(
     title = "Percentage of 'Yes' votes in the UN General Assembly",
-    subtitle = "1946 to 2015",
+    subtitle = "1946 to 2019",
     y = "% Yes",
     x = "Year",
     color = "Country"
@@ -61,8 +61,8 @@ unvotes %>%
 
 ## References {#references}
 
-1. David Robinson (2017). [unvotes](https://CRAN.R-project.org/package=unvotes): 
-   United Nations General Assembly Voting Data. R package version 0.2.0.
+1. David Robinson (2021). [unvotes](https://CRAN.R-project.org/package=unvotes): 
+   United Nations General Assembly Voting Data. R package version 0.3.0.
 1. Erik Voeten "Data and Analyses of Voting in the UN General Assembly" 
    Routledge Handbook of International Organization, edited by Bob Reinalda 
    (published May 27, 2013).
